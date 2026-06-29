@@ -14,9 +14,12 @@
     "environment": "client",
     "entrypoints": {
         "preLaunch": [
-            "com.zephy.zlsseymour.PreLaunch"
+            "com.zephy.zls.PreLaunch"
         ]
     },
+    "mixins": [
+        "zls-seymour.mixins.json"
+    ],
     "depends": {
         "fabricloader": ">=0.18.0",
         "fabric-api": ">=$min_fabric_api_version",

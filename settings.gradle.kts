@@ -9,6 +9,7 @@ pluginManagement {
 }
 
 includeBuild("../essential-gradle-toolkit")
+include("JavaModUpdater")
 
 rootProject.name = "ZLS-Seymour"
 rootProject.buildFileName = "root.gradle.kts"

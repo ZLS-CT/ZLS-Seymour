@@ -5,11 +5,13 @@ plugins {
     id("gg.essential.defaults")
 }
 
-group = "com.zephy.zlsseymour"
+group = "com.zephy.zls"
 version = "4.3.0"
 
 tasks {
     processResources {
+        from(getByPath(":JavaModUpdater:jar").outputs)
+
         val version = project.version
         val minFabricApiVersion = project.findProperty("min-fabric-api")?.toString()
         val javaVersion = project.java.toolchain.languageVersion.get().asInt()
@@ -23,6 +25,12 @@ tasks {
                 "version" to version,
                 "min_fabric_api_version" to minFabricApiVersion,
             ))
+        }
+
+        filesMatching("zls-seymour.mixins.json") {
+            filter { line ->
+                line.replace("JAVA_\$compatibilityLevel", "JAVA_$javaVersion")
+            }
         }
     }
 }

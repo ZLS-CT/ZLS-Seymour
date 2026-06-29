@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "com.zephy.zls.mixins",
+    "compatibilityLevel": "JAVA_$compatibilityLevel",
+    "mixins": [
+        "ChatHudMixin",
+        "DrawContextMixin",
+        "ClientTextTooltipAccessor"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

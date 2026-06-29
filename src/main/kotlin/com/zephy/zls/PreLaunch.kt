@@ -1,4 +1,4 @@
-package com.zephy.zlsseymour
+package com.zephy.zls
 
 import com.google.gson.Gson
 import net.fabricmc.loader.api.FabricLoader
