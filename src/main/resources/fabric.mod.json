@@ -1,0 +1,26 @@
+{
+    "schemaVersion": 1,
+    "id": "zls-seymour",
+    "version": "${version}",
+    "name": "ZLS-Seymour",
+    "description": "Seymour scanner for Hypixel SkyBlock.",
+    "authors": [
+        "Zephy"
+    ],
+    "contact": {
+        "sources": "https://github.com/ZLS-CT/ZLS-Java",
+        "issues": "https://github.com/ZLS-CT/ZLS-Java/issues"
+    },
+    "environment": "client",
+    "entrypoints": {
+        "preLaunch": [
+            "com.zephy.zlsseymour.PreLaunch"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.18.0",
+        "fabric-api": ">=$min_fabric_api_version",
+        "fabric-language-kotlin": ">=1.13.8+kotlin.2.3.0",
+        "zjs": ">=1.0.0"
+    }
+}
